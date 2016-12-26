@@ -1,0 +1,35 @@
+<link rel="stylesheet" type="text/css" href='/lang/app/templates/design.css' />
+<script src='/lang/app/templates/test.js'></script>
+<style>
+table, th, td {
+    border: 1px solid black;
+}
+</style>
+<h1 style = "text-align:center";>Enter Sentence:</h1>
+
+<form method="POST" action="/">
+    {{ form.hidden_tag() }}
+    <div style = "text-align:center";> {{ form.sentence.label }} : {{ form.sentence() }} </div>
+    <div style = "text-align:center";> {{ form.submit.label }} : {{ form.submit() }} </div>
+</form>
+
+<!--<p style = "text-align:center";>{{ data }}</p>-->
+<!-- style="border:1px solid black;" -->
+
+<table align = "center"  >
+<tr>
+    <th>Word</th>
+    <th>Part of Speech</th>
+    <th>Modifying</th>
+    <th>Modifier</th>
+</tr>
+{% for item in data %}
+  <tr>
+    {% for stuff in item %}
+      <td>{{ stuff }}</td>
+    {% endfor %}
+  </tr>
+{% endfor %}
+</table>
+
+
