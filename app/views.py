@@ -7,12 +7,11 @@ from wtforms.validators import InputRequired, NumberRange, Length
 from wtforms import StringField, IntegerField, SelectMultipleField, \
     RadioField, TextAreaField, PasswordField, SubmitField
 import hashlib
+import pandas as pd
 
 
-
-
-
-
+df  = pd.read_excel('/Users/jacobferragut/gogo/app/templates/gogoKanjiKanji.xlsx',0) 
+print df
 Red = redis.StrictRedis()
 class LoginForm(flask_wtf.FlaskForm):
     username = StringField("Username", [InputRequired()])
