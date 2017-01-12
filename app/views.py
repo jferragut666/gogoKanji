@@ -1,16 +1,49 @@
 from app import app
-from flask import render_template
+from flask import render_template, session, redirect, url_for
 import wtforms
 import flask_wtf
-#from run import parser
-@app.template_filter()
-def newLine(d):
-  lst = [] 
-  for i in d:
-    lst.append(i+"\n")
-  return lst
-@app.route('/', methods=['post','get'])
-def main():
+import redis
+from wtforms.validators import InputRequired, NumberRange, Length
+from wtforms import StringField, IntegerField, SelectMultipleField, \
+    RadioField, TextAreaField, PasswordField, SubmitField
+import hashlib
+
+
+
+
+
+
+Red = redis.StrictRedis()
+class LoginForm(flask_wtf.FlaskForm):
+    username = StringField("Username", [InputRequired()])
+    password = PasswordField("Password", [InputRequired()])
+    login = SubmitField()
+    register = SubmitField()
+
+@app.route('/login', methods=['post','get'])
+def login():
+    form = LoginForm()
+    if form.validate_on_submit():
+        if form.login.data:
+            passwordRedis = Red.get("password:"+form.username.data)
+            value = hashlib.md5(form.password.data).hexdigest()
+            if value == passwordRedis:
+                print "logged in "+form.username.data
+                session['user'] = form.username.data
+                return redirect(url_for('index'))
+            print "username or password : incorrect"
+        elif form.register.data:
+            print "registering"
+            if not Red.get("password:"+form.username.data):
+                Red.set( "password:"+form.username.data, hashlib.md5(form.password.data).hexdigest())
+    else:
+        print "invalid form"
+        #Red.set( key, value )
+
+    return render_template('login.html', form=form)
+
+@app.route('/test/', methods=['post','get'])
+def main0():
     parsedData = 0
     
     form = RequestForm()
@@ -38,4 +71,20 @@ class RequestForm(flask_wtf.FlaskForm):
     sentence = wtforms.StringField('Sentence', [wtforms.validators.InputRequired()])
     submit = wtforms.SubmitField()
 
-    
+
+class MainForm(flask_wtf.FlaskForm):
+    answerBox = StringField("Answer here", [InputRequired()])
+    submitAnswer = SubmitField()
+
+
+@app.route('/')
+def index():
+    form = MainForm()
+    if form.validate_on_submit():
+        if form.main.data:
+            return render_template('main.html', form=form)
+
+
+
+
+

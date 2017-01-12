@@ -1,0 +1,12 @@
+<html>
+<title>Main</title>
+<body>
+
+<form method="POST" action="/login">
+{{ form.hidden_tag() }}
+<div> {{ form.answerBox.label }} : {{ form.answerBox() }} </div>
+<div> {{ form.submitAnswer.label}} : {{ form.submitAnswer() }} </div>
+</form>
+
+</body>
+</html>
