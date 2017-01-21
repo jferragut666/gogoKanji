@@ -3,8 +3,9 @@ df  = pd.read_excel('/Users/jacobferragut/gogo/app/templates/gogoKanjiKanji.xlsx
 excelList = list(df.T.itertuples())
 
 
-class user():
-    def __init__(self):
+class user:
+    def __init__(self, password):
+        self.hashedPassword = password
         self.deck = []
         self.col1 = excelList[0]
         self.col2 = excelList[1]
@@ -14,7 +15,9 @@ class user():
         return self.deck
     def setDeck(self,d):
         self.deck = d
-        
+    
+    def getPassword(self):
+        return self.hashedPassword
 
 
 

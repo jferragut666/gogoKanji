@@ -1,0 +1,19 @@
+<p>Japanese Kanji List</p>
+<div class=row>
+    <div class="col-xs-6 col-md-4">
+<table align = "center">
+<tr>
+    <th>Kanji</th>
+    <th>English</th>
+    <th>Days</th>
+</tr>
+{% for card in data %}
+    <tr>
+    {% for element in card %}
+        <td>{{element}}</td>
+    {% endfor %}
+    </tr>
+{% endfor %}
+</table>
+</div>
+</div>
