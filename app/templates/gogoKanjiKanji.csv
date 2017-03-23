@@ -1,1 +1,37 @@
-"お手洗い”,”washroom”,True"手伝う”,”to help”,True"服","to help",True"警察","to help",True"危険","to help",True"時間","to help",True"質問","to help",True"会社員","to help",True"空港","to help",True"食べ物","to help",True"飲み物","to help",True"物","to help",True"事","to help",True"大丈夫","to help",True"上手","to help",True"下手","to help",True"馬鹿","to help",True"親切","to help",True"公園","to help",True"約束","to help",True"最近","to help",True"最低","to help",True"税金","to help",True"夕方","to help",True"予約","to help",True"文化","to help",True"種類","to help",True"間違い","to help",True"引っ越す","to help",True"出口","to help",True"入り口","to help",True"手紙","to help",True"趣味","to help",True"大抵","to help",True"部屋","to help",True"面白い","to help",True
+お手洗い,Washroom, datetimeHere
+お弁当,Boxed lunch,datetimeHere
+手伝う,to help,datetimeHere
+服,Clothes,datetimeHere
+警察,Police,datetimeHere
+危険,Danger,datetimeHere
+時間,Time,datetimeHere
+質問,Question,datetimeHere
+会社員,company worker,datetimeHere
+空港,Airport,datetimeHere
+食べ物,Food,datetimeHere
+飲み物,Drink,datetimeHere
+物,Physical thing,datetimeHere
+事,ideological thing,datetimeHere
+大丈夫,Its ok,datetimeHere
+上手,good at,datetimeHere
+下手,bad at,datetimeHere
+馬鹿,Idiot,datetimeHere
+親切,Kindness,datetimeHere
+公園,Park,datetimeHere
+約束,Aaa,datetimeHere
+最近,Recently,datetimeHere
+最低,Lowest,datetimeHere
+税金,to help,datetimeHere
+夕方,evening,datetimeHere
+予約,Promise,datetimeHere
+文化,Culture,datetimeHere
+種類,Variety,datetimeHere
+間違い,Mistake,datetimeHere
+引っ越す,to move(house),datetimeHere
+出口,exit,datetimeHere
+入り口,Entrance,datetimeHere
+手紙,Letter,datetimeHere
+趣味,Hobby,datetimeHere
+大抵,Usually,datetimeHere
+部屋,Room,datetimeHere
+面白い,Interesting,datetimeHere
