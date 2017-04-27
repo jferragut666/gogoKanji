@@ -1,37 +1,35 @@
-お手洗い,Washroom, datetimeHere
-お弁当,Boxed lunch,datetimeHere
-手伝う,to help,datetimeHere
-服,Clothes,datetimeHere
-警察,Police,datetimeHere
-危険,Danger,datetimeHere
-時間,Time,datetimeHere
-質問,Question,datetimeHere
-会社員,company worker,datetimeHere
-空港,Airport,datetimeHere
-食べ物,Food,datetimeHere
-飲み物,Drink,datetimeHere
-物,Physical thing,datetimeHere
-事,ideological thing,datetimeHere
-大丈夫,Its ok,datetimeHere
-上手,good at,datetimeHere
-下手,bad at,datetimeHere
-馬鹿,Idiot,datetimeHere
-親切,Kindness,datetimeHere
-公園,Park,datetimeHere
-約束,Aaa,datetimeHere
-最近,Recently,datetimeHere
-最低,Lowest,datetimeHere
-税金,to help,datetimeHere
-夕方,evening,datetimeHere
-予約,Promise,datetimeHere
-文化,Culture,datetimeHere
-種類,Variety,datetimeHere
-間違い,Mistake,datetimeHere
-引っ越す,to move(house),datetimeHere
-出口,exit,datetimeHere
-入り口,Entrance,datetimeHere
-手紙,Letter,datetimeHere
-趣味,Hobby,datetimeHere
-大抵,Usually,datetimeHere
-部屋,Room,datetimeHere
-面白い,Interesting,datetimeHere
+お手洗い,Washroom, datetimeHere,へや
+お弁当,Boxed lunch,datetimeHere,へや
+手伝う,to help,datetimeHere,へや
+服,Clothes,datetimeHere,へや
+警察,Police,datetimeHere,へや
+危険,Danger,datetimeHere,へや
+時間,Time,datetimeHere,へや
+質問,Question,datetimeHere,へや
+会社員,company worker,datetimeHere,へや
+空港,Airport,datetimeHere,へや
+食べ物,Food,datetimeHere,へや
+飲み物,Drink,datetimeHere,へや
+物,Physical thing,datetimeHere,へや
+事,ideological thing,datetimeHere,へや
+大丈夫,Its ok,datetimeHere,へや
+上手,good at,datetimeHere,へや
+下手,bad at,datetimeHere,へや
+馬鹿,Idiot,datetimeHere,へや
+親切,Kindness,datetimeHere,へや
+公園,Park,datetimeHere,へや
+約束,Aaa,datetimeHere,へや
+最近,Recently,datetimeHere,へや
+最低,Lowest,datetimeHere,へや
+税金,to help,datetimeHere,へや
+夕方,evening,datetimeHere,へや
+十,ten,datetimeHere,じゅう
+九,nine,datetimeHere,きゅ
+八,eight,datetimeHere,はち
+七,seven,datetimeHere,なな
+六,six,datetimeHere,ろく
+五,five,datetimeHere,ご
+四,four,datetimeHere,よん
+三,three,datetimeHere,さん
+二,two,datetimeHere,に
+一,one,datetimeHere,いち

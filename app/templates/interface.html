@@ -3,12 +3,25 @@
 <html> <head>
 <title>Study Japanese</title>
 </head>
-
 <body>
 <h1>Gogo Kanji 午後漢字</h1>
 <div class=row>
     <div class="col-xs-6 col-md-4">
 <table align = "center">
+
+<!doctype html>
+<title>My Application</title>
+{% with messages = get_flashed_messages() %}
+  {% if messages %}
+    <ul class=flashes>
+    {% for message in messages %}
+      <div style="font-size:32"><li>{{ message }}</li></div>
+    {% endfor %}
+    </ul>
+  {% endif %}
+{% endwith %}
+{% block body %}{% endblock %}
+
 <tr>
     <th>Kanji</th>
     <th>English</th>
@@ -21,8 +34,10 @@
     {% endfor %}
     </tr>
 {% endfor %}
-    <h2>Kanji</h2>
-    <p>{{card}}</p>
+    <center><h2>Kanji</h2></center>
+
+
+<center><div style="font-size:64"><ruby>{{card}}<rt>{{furigana}}</rt></ruby></div></center>
 <form method="POST" action="/">
     {{ form.hidden_tag() }}
     <div style = "text-align:center";> {{ form.answerBox.label }} : {{ form.answerBox() }} </div>
@@ -38,5 +53,5 @@
 
 <hr>
 <address></address>
-<!-- hhmts start -->Last modified: Sun Apr 16 22:47:41 EDT 2017 <!-- hhmts end -->
+<!-- hhmts start -->Last modified: Mon Apr 17 14:05:48 EDT 2017 <!-- hhmts end -->
 </body> </html>

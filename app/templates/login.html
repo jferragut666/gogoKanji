@@ -4,6 +4,17 @@
 
 <form method="POST" action="/login">
 {{ form.hidden_tag() }}
+{% with messages = get_flashed_messages() %}
+  {% if messages %}
+    <ul class=flashes>
+    {% for message in messages %}
+      <li>{{ message }}</li>
+    {% endfor %}
+    </ul>
+  {% endif %}
+{% endwith %}
+{% block body %}{% endblock %}
+
 <div> {{ form.username.label }} : {{ form.username() }} </div>
 <div> {{ form.password.label }} : {{ form.password() }} </div>
 <div> {{ form.login.label}} : {{ form.login() }} </div>
